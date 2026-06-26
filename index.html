@@ -4,64 +4,132 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OffertFlow AI</title>
+  <meta name="description" content="OffertFlow AI hilft Handwerksbetrieben, mehr Offerten in Auftraege zu verwandeln - mit Vorlagen, Follow-up-System und Angebotsbausteinen." />
   <style>
-    body { font-family: Arial, sans-serif; margin:0; color:#14213d; background:#f7f9fc; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 48px 24px; }
-    .hero { background:white; padding:56px; border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.08); }
-    h1 { font-size: 44px; line-height:1.1; margin:0 0 18px; }
-    h2 { margin-top:42px; }
-    .sub { font-size:20px; color:#3b4a65; max-width:800px; }
-    .btn { display:inline-block; margin-top:24px; padding:16px 26px; background:#0d6efd; color:white; text-decoration:none; border-radius:10px; font-weight:bold; }
-    .btn-secondary { display:inline-block; margin-top:16px; margin-left:12px; padding:16px 26px; background:#1f2937; color:white; text-decoration:none; border-radius:10px; font-weight:bold; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:24px; }
-    .card { background:white; padding:22px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.06); }
-    .price { font-size:30px; font-weight:bold; }
-    .muted { color:#5b6780; }
-    ul { line-height:1.7; }
-    .cta-row { margin-top: 24px; }
+    :root {
+      --bg:#f6f8fc;
+      --text:#14213d;
+      --muted:#5b6780;
+      --blue:#0d6efd;
+      --dark:#1f2937;
+      --white:#ffffff;
+      --line:#d9e1ee;
+      --ok:#0f766e;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin:0; color:var(--text); background:var(--bg); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 20px 64px; }
+    .hero, .section, .legal { background:var(--white); border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.06); padding:40px; margin-bottom:24px; }
+    h1 { font-size: 48px; line-height:1.08; margin:0 0 18px; }
+    h2 { font-size:30px; margin:0 0 18px; }
+    h3 { font-size:22px; margin:0 0 12px; }
+    p { line-height:1.65; }
+    .sub { font-size:20px; color:var(--muted); max-width:860px; }
+    .cta-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn, .btn-secondary { display:inline-block; padding:16px 26px; color:white; text-decoration:none; border-radius:12px; font-weight:bold; }
+    .btn { background:var(--blue); }
+    .btn-secondary { background:var(--dark); }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:18px; }
+    .card { border:1px solid var(--line); background:#fbfcff; padding:22px; border-radius:14px; }
+    .price { font-size:34px; font-weight:bold; margin:10px 0; }
+    .muted { color:var(--muted); }
+    ul { line-height:1.7; padding-left:22px; }
+    .badge { display:inline-block; background:#eaf2ff; color:#0b57d0; padding:8px 12px; border-radius:999px; font-size:14px; font-weight:bold; margin-bottom:16px; }
+    .note { border-left:4px solid var(--ok); padding:12px 16px; background:#f2fbfa; border-radius:8px; }
+    .small { font-size:14px; color:var(--muted); }
+    .footer-links { display:flex; flex-wrap:wrap; gap:16px; margin-top:18px; }
+    a.text-link { color:var(--blue); text-decoration:none; }
+    @media (max-width: 700px) { h1 { font-size:36px; } .hero, .section, .legal { padding:24px; } }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
-      <h1>Mehr angenommene Offerten fuer Handwerksbetriebe</h1>
-      <p class="sub">OffertFlow AI gibt dir fertige Nachfassvorlagen, Angebotsbausteine und eine einfache Follow-up-Logik, damit du mehr bestehende Anfragen in Auftraege verwandelst - ohne mehr Werbung und ohne kompliziertes CRM.</p>
+      <div class="badge">Digitale Verkaufshilfe fuer Handwerksbetriebe</div>
+      <h1>Mehr angenommene Offerten - ohne mehr Werbung und ohne kompliziertes CRM</h1>
+      <p class="sub">OffertFlow AI gibt dir fertige Nachfassvorlagen, Angebotsbausteine, Einwandantworten und eine klare Follow-up-Logik, damit du mehr bestehende Anfragen in Auftraege verwandelst.</p>
       <div class="cta-row">
-        <a class="btn" href="[app.playto.so](https://app.playto.so/pay/checkout/?subscriptionPlanId=6bdb4a79-85ab-4b50-8607-4f4775ae5daa)">Basis jetzt kaufen</a>
-        <a class="btn-secondary" href="[app.playto.so](https://app.playto.so/pay/checkout?subscriptionPlanId=b3f33545-501a-485f-aa53-abc7d85c7acc)">Pro jetzt kaufen</a>
+        <a class="btn" href="https://app.playto.so/pay/checkout/?subscriptionPlanId=6bdb4a79-85ab-4b50-8607-4f4775ae5daa">Basis jetzt kaufen</a>
+        <a class="btn-secondary" href="https://app.playto.so/pay/checkout?subscriptionPlanId=b3f33545-501a-485f-aa53-abc7d85c7acc">Pro jetzt kaufen</a>
+      </div>
+      <p class="small">Direkter Checkout ueber Playto. Digitale Auslieferung nach Kauf.</p>
+    </section>
+
+    <section class="section">
+      <h2>Warum OffertFlow AI</h2>
+      <div class="grid">
+        <div class="card"><h3>Mehr Abschlussquote</h3><p class="muted">Viele Offerten gehen nicht wegen des Preises verloren, sondern wegen fehlender oder schwacher Nachfassungen.</p></div>
+        <div class="card"><h3>Sofort einsetzbar</h3><p class="muted">Du bekommst direkt nutzbare Texte fuer WhatsApp, E-Mail und typische Einwandsituationen.</p></div>
+        <div class="card"><h3>Weniger Improvisation</h3><p class="muted">Statt jedes Mal neu zu formulieren, arbeitest du mit einem klaren Ablauf und einer wiederholbaren Logik.</p></div>
       </div>
     </section>
-    <section>
-      <h2>Warum OffertFlow AI</h2>
-      <ul>
-        <li>Viele Offerten gehen verloren, weil nicht sauber nachgefasst wird.</li>
-        <li>Du bekommst sofort ein einsatzbereites System statt leerer Theorie.</li>
-        <li>Die Vorlagen sparen Zeit und geben Sicherheit bei Einwaenden.</li>
-      </ul>
-    </section>
-    <section>
+
+    <section class="section">
       <h2>Was enthalten ist</h2>
       <div class="grid">
-        <div class="card"><strong>40+ Vorlagen</strong><p class="muted">WhatsApp, E-Mail und SMS fuer mehrere Nachfasssituationen.</p></div>
-        <div class="card"><strong>Angebotsbausteine</strong><p class="muted">Bessere Formulierungen fuer Klarheit, Vertrauen und Abschluss.</p></div>
-        <div class="card"><strong>Trackingdatei</strong><p class="muted">Offerten, naechste Kontakte und Abschlussstatus im Blick.</p></div>
+        <div class="card"><h3>40+ Nachfassvorlagen</h3><p class="muted">Fuer WhatsApp, E-Mail und SMS in mehreren Nachfasssituationen.</p></div>
+        <div class="card"><h3>Angebotsbausteine</h3><p class="muted">Bessere Formulierungen fuer Klarheit, Vertrauen und Abschluss.</p></div>
+        <div class="card"><h3>Einwandantworten</h3><p class="muted">Fertige Antworten auf typische Preis-, Timing- und Vergleichseinwaende.</p></div>
+        <div class="card"><h3>Trackingdatei</h3><p class="muted">Behalte Offerten, naechste Kontakte und Abschlussstatus im Blick.</p></div>
       </div>
     </section>
-    <section id="preise">
+
+    <section class="section">
       <h2>Preise</h2>
       <div class="grid">
         <div class="card">
           <div>Basis</div>
           <div class="price">79 CHF</div>
-          <p class="muted">Fuer den schnellen Start mit Kernsystem.</p>
-          <a class="btn" href="[app.playto.so](https://app.playto.so/pay/checkout/?subscriptionPlanId=6bdb4a79-85ab-4b50-8607-4f4775ae5daa)">Basis kaufen</a>
+          <ul>
+            <li>40+ Vorlagen</li>
+            <li>Basis-Follow-up-System</li>
+            <li>Angebotsbausteine</li>
+            <li>Trackingdatei</li>
+          </ul>
+          <a class="btn" href="https://app.playto.so/pay/checkout/?subscriptionPlanId=6bdb4a79-85ab-4b50-8607-4f4775ae5daa">Basis kaufen</a>
         </div>
         <div class="card">
           <div>Pro</div>
           <div class="price">249 CHF</div>
-          <p class="muted">Mit Branchenvarianten, mehr Vorlagen und tieferer Verkaufsunterstuetzung.</p>
-          <a class="btn-secondary" href="[app.playto.so](https://app.playto.so/pay/checkout?subscriptionPlanId=b3f33545-501a-485f-aa53-abc7d85c7acc)">Pro kaufen</a>
+          <ul>
+            <li>Alles aus Basis</li>
+            <li>Erweiterte Vorlagen</li>
+            <li>Branchenvarianten</li>
+            <li>Tiefere Verkaufsunterstuetzung</li>
+          </ul>
+          <a class="btn-secondary" href="https://app.playto.so/pay/checkout?subscriptionPlanId=b3f33545-501a-485f-aa53-abc7d85c7acc">Pro kaufen</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>FAQ</h2>
+      <div class="grid">
+        <div class="card"><h3>Ist das eine Software?</h3><p class="muted">Nein. Es ist ein sofort einsetzbares digitales System aus Vorlagen, Bausteinen und Prozessen.</p></div>
+        <div class="card"><h3>Wie schnell kann ich starten?</h3><p class="muted">In der Regel am selben Tag. Die Inhalte sind auf schnelle Umsetzung ausgelegt.</p></div>
+        <div class="card"><h3>Funktioniert das nur fuer grosse Betriebe?</h3><p class="muted">Nein. Es ist bewusst fuer kleine und mittlere Handwerksbetriebe aufgebaut.</p></div>
+      </div>
+    </section>
+
+    <section class="legal">
+      <h2>Urheberrecht und Nutzungsrechte</h2>
+      <div class="note">
+        <p><strong>Wichtig:</strong> Ich kann dir eine starke urheberrechtliche Kennzeichnung und Nutzungsregelung formulieren, aber ich kann dir keine absolute exklusive Rechtslage "nur fuer dich und mich" auf allen digitalen Fussspuren garantieren. Rechtlich wirksam sind nur Rechte, die du selbst besitzt oder vertraglich wirksam uebertragen bekommst.</p>
+      </div>
+      <p>Empfohlene Klausel fuer dieses Produkt:</p>
+      <p><strong>Copyright © [DEIN NAME ODER DEINE FIRMA]. Alle Rechte vorbehalten.</strong></p>
+      <p>Dieses Produkt, einschliesslich aller Texte, Vorlagen, Strukturen, Dateien, Layouts und begleitenden Materialien, ist urheberrechtlich geschuetzt. Jede Vervielfaeltigung, Weitergabe, Veroeffentlichung, Bearbeitung, Unterlizenzierung oder kommerzielle Weiterverwendung - ganz oder teilweise - ist ohne ausdrueckliche schriftliche Zustimmung des Rechteinhabers untersagt.</p>
+      <p>Mit dem Kauf wird ausschliesslich ein einfaches, nicht uebertragbares Nutzungsrecht zur eigenen internen Verwendung erworben. Es erfolgt keine Uebertragung von Urheberrechten, Markenrechten oder ausschliesslichen Verwertungsrechten.</p>
+      <p class="small">Fuer eine wirklich belastbare exklusive Rechteklausel, AGB, Impressum und Datenschutz sollte ein Anwalt in der Schweiz oder im DACH-Raum die finalen Texte pruefen.</p>
+    </section>
+
+    <section class="legal">
+      <h2>Impressum / Datenschutz Platzhalter</h2>
+      <p>Trage hier deinen Namen oder Firmennamen, Anschrift, E-Mail und die datenschutzrechtlich noetigen Angaben ein.</p>
+      <div class="footer-links">
+        <a class="text-link" href="#">Impressum</a>
+        <a class="text-link" href="#">Datenschutz</a>
+        <a class="text-link" href="#">Nutzungsbedingungen</a>
       </div>
     </section>
   </div>
