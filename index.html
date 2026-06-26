@@ -12,11 +12,13 @@
     h2 { margin-top:42px; }
     .sub { font-size:20px; color:#3b4a65; max-width:800px; }
     .btn { display:inline-block; margin-top:24px; padding:16px 26px; background:#0d6efd; color:white; text-decoration:none; border-radius:10px; font-weight:bold; }
+    .btn-secondary { display:inline-block; margin-top:16px; margin-left:12px; padding:16px 26px; background:#1f2937; color:white; text-decoration:none; border-radius:10px; font-weight:bold; }
     .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:24px; }
     .card { background:white; padding:22px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.06); }
     .price { font-size:30px; font-weight:bold; }
     .muted { color:#5b6780; }
     ul { line-height:1.7; }
+    .cta-row { margin-top: 24px; }
   </style>
 </head>
 <body>
@@ -24,7 +26,10 @@
     <section class="hero">
       <h1>Mehr angenommene Offerten fuer Handwerksbetriebe</h1>
       <p class="sub">OffertFlow AI gibt dir fertige Nachfassvorlagen, Angebotsbausteine und eine einfache Follow-up-Logik, damit du mehr bestehende Anfragen in Auftraege verwandelst - ohne mehr Werbung und ohne kompliziertes CRM.</p>
-      <a class="btn" href="#preise">Jetzt OffertFlow AI holen</a>
+      <div class="cta-row">
+        <a class="btn" href="[app.playto.so](https://app.playto.so/pay/checkout/?subscriptionPlanId=6bdb4a79-85ab-4b50-8607-4f4775ae5daa)">Basis jetzt kaufen</a>
+        <a class="btn-secondary" href="[app.playto.so](https://app.playto.so/pay/checkout?subscriptionPlanId=b3f33545-501a-485f-aa53-abc7d85c7acc)">Pro jetzt kaufen</a>
+      </div>
     </section>
     <section>
       <h2>Warum OffertFlow AI</h2>
@@ -45,10 +50,19 @@
     <section id="preise">
       <h2>Preise</h2>
       <div class="grid">
-        <div class="card"><div>Basis</div><div class="price">79 CHF</div><p class="muted">Fuer den schnellen Start mit Kernsystem.</p></div>
-        <div class="card"><div>Pro</div><div class="price">249 CHF</div><p class="muted">Mit Branchenvarianten, mehr Vorlagen und tieferer Verkaufsunterstuetzung.</p></div>
+        <div class="card">
+          <div>Basis</div>
+          <div class="price">79 CHF</div>
+          <p class="muted">Fuer den schnellen Start mit Kernsystem.</p>
+          <a class="btn" href="[app.playto.so](https://app.playto.so/pay/checkout/?subscriptionPlanId=6bdb4a79-85ab-4b50-8607-4f4775ae5daa)">Basis kaufen</a>
+        </div>
+        <div class="card">
+          <div>Pro</div>
+          <div class="price">249 CHF</div>
+          <p class="muted">Mit Branchenvarianten, mehr Vorlagen und tieferer Verkaufsunterstuetzung.</p>
+          <a class="btn-secondary" href="[app.playto.so](https://app.playto.so/pay/checkout?subscriptionPlanId=b3f33545-501a-485f-aa53-abc7d85c7acc)">Pro kaufen</a>
+        </div>
       </div>
-      <p><strong>Checkout-Hinweis:</strong> Ersetze den Kaufbutton mit deinem Stripe- oder Playto-Link.</p>
     </section>
   </div>
 </body>
